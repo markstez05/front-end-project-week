@@ -13,8 +13,9 @@ class NewNote extends Component {
   };
   handleAddNote = () => {
     const { noteTitle, noteText } = this.state;
-    const noteData = { noteTitle, noteText };
-    this.setState({ noteTitle: '', noteText: ''});
+    const newNote = { noteTitle, noteText };
+    // this.props.{ noteTitle: '', noteText: ''});
+    this.props.history.push('/');
   };
   render () {
     return (
